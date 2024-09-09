@@ -115,3 +115,27 @@ html {
 .page{
 	position: relative;
 }
+
+
+
+@media only screen and (max-width: 991px){
+	.logged-in .header{
+		margin-top: 30px;
+	}
+
+	.logged-in .hero{
+		margin-top: 115px;
+	}
+}
+
+@media only screen and (max-width: 768px){
+	.logged-in .header{
+		margin-top: 40px;
+	}
+}
+
+@media only screen and (max-width: 575px){
+	html{
+		margin-top: 0 !important;
+	}
+}

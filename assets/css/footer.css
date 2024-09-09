@@ -1,38 +1,38 @@
-.footer{
+.footer {
     position: relative;
     z-index: 9;
-    background-color: #a38b65;
+    background-color: #f5dcbc;
     padding: 48px 0;
 }
 
-.footer .footer-holder{
+.footer .footer-holder {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
 }
 
-.footer .footer-holder .footer-holder-part__logo{
+.footer .footer-holder .footer-holder-part__logo {
     margin-bottom: 18px;
 }
 
-.footer .footer-holder .footer-holder-part__logo a{
+.footer .footer-holder .footer-holder-part__logo a {
     display: flex;
 }
 
-.footer .footer-holder .footer-holder-part__logo a img{
-    width: 140px;
-    height: 80px;
+.footer .footer-holder .footer-holder-part__logo a img {
+    width: 120px;
+    height: 70px;
 }
 
-.footer .footer-holder .footer-holder-part__slogan p{
+.footer .footer-holder .footer-holder-part__slogan p {
     font-family: "Mulish", sans-serif;
     font-weight: 500;
     font-style: normal;
     font-size: 24px;
-    color: #fff;
+    color: #0d0d0d;
 }
 
-.footer .footer-holder .footer-holder-part h4{
+.footer .footer-holder .footer-holder-part h4 {
     flex: 0 0 100%;
     text-align: left;
     font-family: "Mulish", sans-serif;
@@ -40,11 +40,11 @@
     font-style: normal;
     font-size: 28px;
     margin-bottom: 28px;
-    color: #fff;
+    color: #0d0d0d;
 }
 
 .footer .footer-holder .footer-holder-part .footer-holder-part__menu ul,
-.footer .footer-holder .footer-holder-part .footer-holder-part__contact-me{
+.footer .footer-holder .footer-holder-part .footer-holder-part__contact-me {
     display: flex;
     flex-flow: row wrap;
     justify-content: left;
@@ -52,49 +52,63 @@
 }
 
 .footer .footer-holder .footer-holder-part .footer-holder-part__menu ul li,
-.footer .footer-holder .footer-holder-part .footer-holder-part__contact-me a{
+.footer .footer-holder .footer-holder-part .footer-holder-part__contact-me a {
     flex: 0 0 100%;
     text-align: left;
     margin-bottom: 12px;
 
 }
 
-.footer .footer-holder .footer-holder-part .footer-holder-part__menu ul li:last-of-type{
+.footer .footer-holder .footer-holder-part .footer-holder-part__menu ul li:last-of-type {
     margin-bottom: 0;
 }
 
 .footer .footer-holder .footer-holder-part .footer-holder-part__menu ul li a,
-.footer .footer-holder .footer-holder-part .footer-holder-part__contact-me a{
+.footer .footer-holder .footer-holder-part .footer-holder-part__contact-me a {
     font-family: "Mulish", sans-serif;
     font-weight: 500;
     font-style: normal;
     font-size: 18px;
     text-decoration: none;
-    color: #fff;
+    color: #0d0d0d;
     transition: 300ms;
 }
 
 .footer .footer-holder .footer-holder-part .footer-holder-part__menu ul li a:hover,
-.footer .footer-holder .footer-holder-part .footer-holder-part__contact-me a:hover{
-    color: #e0dfdf;
+.footer .footer-holder .footer-holder-part .footer-holder-part__contact-me a:hover {
+    color: #4f4f4f;
 }
 
-.footer .footer-holder .footer-holder-part .footer-holder-part__contact-me .footer-holder-part__contact-me-icons{
+.footer .footer-holder .footer-holder-part .footer-holder-part__contact-me .footer-holder-part__contact-me-icons {
     flex: 0 0 100%;
     display: flex;
     flex-flow: row wrap;
 }
 
-.footer .footer-holder .footer-holder-part .footer-holder-part__contact-me .footer-holder-part__contact-me-icons a{
+.footer .footer-holder .footer-holder-part .footer-holder-part__contact-me .footer-holder-part__contact-me-icons a {
     display: flex;
     flex: 0 0 30px;
     margin-right: 12px;
 }
 
-.footer .footer-holder .footer-holder-part .footer-holder-part__contact-me .footer-holder-part__contact-me-icons a:last-of-type{
+.footer .footer-holder .footer-holder-part .footer-holder-part__contact-me .footer-holder-part__contact-me-icons a:last-of-type {
     margin-right: 0;
 }
 
-.footer .footer-holder .footer-holder-part .footer-holder-part__contact-me .footer-holder-part__contact-me-icons a svg{
+.footer .footer-holder .footer-holder-part .footer-holder-part__contact-me .footer-holder-part__contact-me-icons a svg {
     width: 30px;
+}
+
+@media only screen and (max-width: 768px) {
+    .footer {
+        padding: 36px 0 24px;
+    }
+
+    .footer .footer-holder .footer-holder-part {
+        margin: 0;
+    }
+
+    .footer .footer-holder .footer-holder-part h4 {
+        margin-top: 24px;
+    }
 }

@@ -34,8 +34,7 @@ $image_right = get_field('image_right');
     <div class="hero-gradient"></div>
     <div class="container">
         <div class="row">
-            <div id="about-me" class="about-us-section" data-aos="fade-up"
-                 data-aos-anchor-placement="center-center">
+            <div id="about-me" class="about-us-section">
                 <div class="about-us-section__left col-md-6">
                     <h1>About me</h1>
                     <?=

@@ -1,4 +1,4 @@
-.hero{
+.hero {
     position: fixed;
     z-index: 1;
     top: 0;
@@ -8,21 +8,21 @@
     overflow: hidden;
 }
 
-.hero .container-fluid{
+.hero .container-fluid {
     padding: 0;
 }
 
-.hero .container-fluid .hero-holder .image-container{
+.hero .container-fluid .hero-holder .image-container {
     display: flex;
 }
 
-.hero .container-fluid .hero-holder .image-container img{
+.hero .container-fluid .hero-holder .image-container img {
     width: 100vw;
     height: 100vh;
     object-fit: cover;
 }
 
-.about-us{
+.about-us {
     margin-top: 100vh;
     position: relative;
     z-index: 9;
@@ -51,12 +51,12 @@
 }
 
 .about-us .about-us-section .about-us-section__left,
-.about-us .about-us-section .about-us-section__right{
+.about-us .about-us-section .about-us-section__right {
     flex: 0 0 auto;
     width: 45%;
 }
 
-.about-us .about-us-section .about-us-section__left h1{
+.about-us .about-us-section .about-us-section__left h1 {
     font-family: "Mulish", sans-serif;
     text-align: left;
     margin-bottom: 32px;
@@ -70,7 +70,7 @@
     margin-bottom: 18px;
 }
 
-.about-us-section__left p:last-of-type{
+.about-us-section__left p:last-of-type {
     margin-bottom: 32px;
 }
 
@@ -105,14 +105,14 @@
     width: 100%;
 }
 
-.first-gallery{
+.first-gallery {
     position: relative;
     z-index: 9;
     background-color: #fff;
     padding-bottom: 160px;
 }
 
-.first-gallery .first-gallery-heading h2{
+.first-gallery .first-gallery-heading h2 {
     font-family: "Parisienne", cursive;
     font-weight: 500;
     font-style: normal;
@@ -121,7 +121,7 @@
     margin-bottom: 32px;
 }
 
-.first-gallery .first-gallery-holder{
+.first-gallery .first-gallery-holder {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -131,28 +131,49 @@
     "three four five"
     "six seven seven";
 }
-.one { grid-area: one; }
-.two { grid-area: two; }
-.three { grid-area: three; }
-.four { grid-area: four; }
-.five { grid-area: five; }
-.six { grid-area: six; }
-.seven { grid-area: seven; }
 
-.first-gallery .first-gallery-holder .first-gallery-holder__img img{
+.one {
+    grid-area: one;
+}
+
+.two {
+    grid-area: two;
+}
+
+.three {
+    grid-area: three;
+}
+
+.four {
+    grid-area: four;
+}
+
+.five {
+    grid-area: five;
+}
+
+.six {
+    grid-area: six;
+}
+
+.seven {
+    grid-area: seven;
+}
+
+.first-gallery .first-gallery-holder .first-gallery-holder__img img {
     width: 100%;
     height: 400px;
     object-fit: cover;
 }
 
-.second-gallery{
+.second-gallery {
     position: relative;
     z-index: 9;
     background-color: #fff;
     padding-bottom: 160px;
 }
 
-.second-gallery .second-gallery-heading h2{
+.second-gallery .second-gallery-heading h2 {
     font-family: "Parisienne", cursive;
     font-weight: 500;
     font-style: normal;
@@ -175,22 +196,56 @@
         "ten-s nine-s twelve-s";
 }
 
-.one-s { grid-area: one-s; }
-.two-s { grid-area: two-s; }
-.three-s { grid-area: three-s; }
-.four-s { grid-area: four-s; }
-.five-s { grid-area: five-s; }
-.six-s { grid-area: six-s; }
-.seven-s { grid-area: seven-s; }
-.eight-s { grid-area: eight-s; }
-.nine-s { grid-area: nine-s; }
-.ten-s { grid-area: ten-s; }
-.eleven-s { grid-area: eleven-s; }
-.twelve-s { grid-area: twelve-s; }
+.one-s {
+    grid-area: one-s;
+}
+
+.two-s {
+    grid-area: two-s;
+}
+
+.three-s {
+    grid-area: three-s;
+}
+
+.four-s {
+    grid-area: four-s;
+}
+
+.five-s {
+    grid-area: five-s;
+}
+
+.six-s {
+    grid-area: six-s;
+}
+
+.seven-s {
+    grid-area: seven-s;
+}
+
+.eight-s {
+    grid-area: eight-s;
+}
+
+.nine-s {
+    grid-area: nine-s;
+}
+
+.ten-s {
+    grid-area: ten-s;
+}
+
+.eleven-s {
+    grid-area: eleven-s;
+}
+
+.twelve-s {
+    grid-area: twelve-s;
+}
 
 
-
-.second-gallery .second-gallery-holder .second-gallery-holder__img img{
+.second-gallery .second-gallery-holder .second-gallery-holder__img img {
     width: 100%;
     height: 400px;
     object-fit: cover;
@@ -199,8 +254,7 @@
 .second-gallery .second-gallery-holder .second-gallery-holder__img.two-s img,
 .second-gallery .second-gallery-holder .second-gallery-holder__img.five-s img,
 .second-gallery .second-gallery-holder .second-gallery-holder__img.seven-s img,
-.second-gallery .second-gallery-holder .second-gallery-holder__img.nine-s img
-{
+.second-gallery .second-gallery-holder .second-gallery-holder__img.nine-s img {
     height: 99.6%;
 }
 
@@ -246,12 +300,12 @@
     margin-top: 64px;
 }
 
-.other-photos .other-photos-holder-arrows img{
+.other-photos .other-photos-holder-arrows img {
     width: 40%;
     order: 2;
 }
 
-.other-photos .other-photos-holder-arrows .gallery-prev{
+.other-photos .other-photos-holder-arrows .gallery-prev {
     order: 1;
 }
 
@@ -259,7 +313,7 @@
     order: 2;
 }
 
-.other-photos .other-photos-holder-arrows svg{
+.other-photos .other-photos-holder-arrows svg {
     background: transparent;
     border-radius: 50%;
     width: 50px;
@@ -269,15 +323,62 @@
 }
 
 
-.other-photos .other-photos-holder-arrows svg:hover{
+.other-photos .other-photos-holder-arrows svg:hover {
     cursor: pointer;
     background-color: #323232FF;
 }
 
-.other-photos .other-photos-holder-arrows svg path{
+.other-photos .other-photos-holder-arrows svg path {
     transition: 300ms;
 }
 
-.other-photos .other-photos-holder-arrows svg:hover path{
+.other-photos .other-photos-holder-arrows svg:hover path {
     stroke: #fff;
 }
+
+@media only screen and (max-width: 991px) {
+    .hero {
+        margin-top: 85px;
+    }
+
+    .about-us {
+        padding-top: 0;
+        padding-bottom: 100px;
+    }
+
+    .about-us-section__left-button a {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .about-us .about-us-section .about-us-section__left {
+        width: 100%;
+        margin-bottom: 60px;
+    }
+
+    .about-us .about-us-section .about-us-section__right {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .hero,
+    .hero .container-fluid .hero-holder .image-container img {
+        height: 50vh;
+    }
+
+    .about-us {
+        margin-top: 62vh;
+        padding-bottom: 60px;
+    }
+
+    .about-us .about-us-section{
+        margin-top: 60px;
+    }
+
+    .about-us .about-us-section .about-us-section__left h1 {
+        font-size: 48px;
+    }
+}
+

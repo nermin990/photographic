@@ -17,7 +17,9 @@
             <div id="contact" class="footer-holder">
                 <div class="footer-holder-part col-md-4">
                     <div class="footer-holder-part__logo">
-                        <?= get_custom_logo(); ?>
+                        <a class="hamburger-menu-logo" href="<?= get_home_url(); ?>">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/img.png" alt="loading...">
+                        </a>
                     </div>
                     <div class="footer-holder-part__slogan">
                         <p>Photography that tells stories. Follow us for updates and get in touch!</p>

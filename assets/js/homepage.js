@@ -1,7 +1,5 @@
 $ = jQuery;
 
-AOS.init();
-
 // Slick slider hero section
 $(document).ready(function () {
     $(".hero-holder").slick({
@@ -9,7 +7,7 @@ $(document).ready(function () {
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 3000,
         infinite: true,
         arrows: false,
         pauseOnHover: false
@@ -20,7 +18,6 @@ $(document).ready(function () {
 function addClassesToGalleryImages() {
     const images = document.querySelectorAll('.first-gallery-holder__img');
 
-    // Iteriramo kroz sve selektovane elemente
     images.forEach((img, index) => {
         const className = ['one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten'][index];
         if (className) {
@@ -68,13 +65,54 @@ $(document).ready(function () {
             '<path d="M40.4336 14.1943L0.433592 14.1943" stroke="#323232FF" stroke-width="1.52838"/>' +
             "</svg>",
     });
-    $(".gallery-prev, .gallery-next").on("mousedown", function(e) {
+    $(".gallery-prev, .gallery-next").on("mousedown", function (e) {
         e.preventDefault(); // Sprečava defaultnu akciju (selektovanje teksta)
     });
 });
 
 
-$(document).ready(function (){
+$(document).ready(function () {
     $('.gallery-prev').appendTo('.other-photos-holder-arrows');
     $('.gallery-next').appendTo('.other-photos-holder-arrows');
 })
+
+// Hamburger menu
+$(document).ready(function () {
+    $('.hamburger-menu-icon .hamburger-open').on('click', function () {
+        $(this).css('display', 'none');
+        $('.hamburger-menu').slideDown();
+        $('.hamburger-close').fadeIn();
+    })
+    $('.hamburger-menu-icon .hamburger-close').on('click', function () {
+        $(this).css('display', 'none');
+        $('.hamburger-menu').slideUp();
+        $('.hamburger-open').fadeIn();
+    })
+    $('.hamburger-menu .header-holder__menu-hamburger .menu-main-menu-container .menu li a').on('click', function () {
+        $('.hamburger-menu').slideUp();
+        $('.hamburger-close').css('display', 'none');
+        $('.hamburger-open').fadeIn();
+    });
+})
+
+// When we are logged in, on scroll turn off margin top, and bringing back margin when we scroll on top
+$(document).ready(function() {
+    var hasScrolled = false;
+
+    $(window).on('scroll', function() {
+        if ($(this).scrollTop() > 0) {
+            if (!hasScrolled) {
+                $('.header').css('margin-top', '0px');
+                $('.hero').css('margin-top', '85px');
+                hasScrolled = true;
+            }
+        } else {
+            if (hasScrolled) {
+                $('.header').css('margin-top', '40px');
+                $('.hero').css('margin-top', '125px');
+                hasScrolled = false;
+            }
+        }
+    });
+});
+
