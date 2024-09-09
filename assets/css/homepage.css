@@ -1,0 +1,283 @@
+.hero{
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh; /* Add height to ensure it's visible */
+    overflow: hidden;
+}
+
+.hero .container-fluid{
+    padding: 0;
+}
+
+.hero .container-fluid .hero-holder .image-container{
+    display: flex;
+}
+
+.hero .container-fluid .hero-holder .image-container img{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.about-us{
+    margin-top: 100vh;
+    position: relative;
+    z-index: 9;
+    background: #fff;
+    padding-bottom: 160px;
+    padding-top: 60px;
+}
+
+.about-us .hero-gradient {
+    position: absolute;
+    top: -120px;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+    pointer-events: none;
+}
+
+.about-us .about-us-section {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    margin-top: 64px;
+}
+
+.about-us .about-us-section .about-us-section__left,
+.about-us .about-us-section .about-us-section__right{
+    flex: 0 0 auto;
+    width: 45%;
+}
+
+.about-us .about-us-section .about-us-section__left h1{
+    font-family: "Mulish", sans-serif;
+    text-align: left;
+    margin-bottom: 32px;
+    font-size: 64px;
+    color: #333;
+}
+
+.about-us-section__left p {
+    font-family: "Mulish", sans-serif;
+    color: #333;
+    margin-bottom: 18px;
+}
+
+.about-us-section__left p:last-of-type{
+    margin-bottom: 32px;
+}
+
+.about-us__left-button {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: left;
+}
+
+.about-us-section__left-button a {
+    background: #fff;
+    padding: 12px 32px;
+    border-radius: 24px;
+    width: 50%;
+    text-align: center;
+    color: #333;
+    text-decoration: none;
+    font-size: 20px;
+    transition: 300ms;
+    display: flex;
+    justify-content: center;
+    border: 1px solid #333;
+    text-transform: uppercase;
+}
+
+.about-us-section__left-button a:hover {
+    background-color: #eee;
+}
+
+.about-us .about-us-section .about-us-section__right img {
+    display: flex;
+    width: 100%;
+}
+
+.first-gallery{
+    position: relative;
+    z-index: 9;
+    background-color: #fff;
+    padding-bottom: 160px;
+}
+
+.first-gallery .first-gallery-heading h2{
+    font-family: "Parisienne", cursive;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 64px;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.first-gallery .first-gallery-holder{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 12px 12px;
+    grid-template-areas:
+    "one one two"
+    "three four five"
+    "six seven seven";
+}
+.one { grid-area: one; }
+.two { grid-area: two; }
+.three { grid-area: three; }
+.four { grid-area: four; }
+.five { grid-area: five; }
+.six { grid-area: six; }
+.seven { grid-area: seven; }
+
+.first-gallery .first-gallery-holder .first-gallery-holder__img img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.second-gallery{
+    position: relative;
+    z-index: 9;
+    background-color: #fff;
+    padding-bottom: 160px;
+}
+
+.second-gallery .second-gallery-heading h2{
+    font-family: "Parisienne", cursive;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 64px;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.second-gallery .second-gallery-holder {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 12px;
+    grid-template-areas:
+        "one-s two-s three-s"
+        "four-s two-s five-s"
+        "six-s six-s five-s"
+        "seven-s eight-s eight-s"
+        "seven-s nine-s eleven-s"
+        "ten-s nine-s twelve-s";
+}
+
+.one-s { grid-area: one-s; }
+.two-s { grid-area: two-s; }
+.three-s { grid-area: three-s; }
+.four-s { grid-area: four-s; }
+.five-s { grid-area: five-s; }
+.six-s { grid-area: six-s; }
+.seven-s { grid-area: seven-s; }
+.eight-s { grid-area: eight-s; }
+.nine-s { grid-area: nine-s; }
+.ten-s { grid-area: ten-s; }
+.eleven-s { grid-area: eleven-s; }
+.twelve-s { grid-area: twelve-s; }
+
+
+
+.second-gallery .second-gallery-holder .second-gallery-holder__img img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.second-gallery .second-gallery-holder .second-gallery-holder__img.two-s img,
+.second-gallery .second-gallery-holder .second-gallery-holder__img.five-s img,
+.second-gallery .second-gallery-holder .second-gallery-holder__img.seven-s img,
+.second-gallery .second-gallery-holder .second-gallery-holder__img.nine-s img
+{
+    height: 99.6%;
+}
+
+.other-photos {
+    position: relative;
+    z-index: 9;
+    background-color: #fff;
+    padding-bottom: 160px;
+}
+
+.other-photos .container-fluid {
+    position: relative;
+    padding: 0;
+}
+
+.other-photos .other-photos-heading h2 {
+    font-family: "Parisienne", cursive;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 64px;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.other-photos .other-photos-holder-img img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.other-photos .slick-slide {
+    margin: 0 8px;
+}
+
+.other-photos .other-photos-holder-arrows {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 20%;
+    margin-left: 40%;
+    margin-top: 64px;
+}
+
+.other-photos .other-photos-holder-arrows img{
+    width: 40%;
+    order: 2;
+}
+
+.other-photos .other-photos-holder-arrows .gallery-prev{
+    order: 1;
+}
+
+.other-photos .other-photos-holder-arrows .gallery-next {
+    order: 2;
+}
+
+.other-photos .other-photos-holder-arrows svg{
+    background: transparent;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    padding: 8px;
+    transition: 300ms;
+}
+
+
+.other-photos .other-photos-holder-arrows svg:hover{
+    cursor: pointer;
+    background-color: #323232FF;
+}
+
+.other-photos .other-photos-holder-arrows svg path{
+    transition: 300ms;
+}
+
+.other-photos .other-photos-holder-arrows svg:hover path{
+    stroke: #fff;
+}

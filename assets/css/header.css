@@ -1,0 +1,58 @@
+.header{
+    display: flex;
+    /*position: relative;*/
+    /*background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.3) 25%, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0.1) 75%, rgba(0, 0, 0, 0) 100%);*/
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.7) 12.5%, rgba(0, 0, 0, 0.6) 25%, rgba(0, 0, 0, 0.5) 37.5%, rgba(0, 0, 0, 0.4) 50%,
+    rgba(0, 0, 0, 0.3) 62.5%, rgba(0, 0, 0, 0.2) 75%, rgba(0, 0, 0, 0.1) 87.5%,rgba(0, 0, 0, 0) 100%);
+}
+
+.header-holder{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.header-holder .logo{
+    display: flex;
+}
+
+.header-holder .header-holder__logo a img{
+    width: 120px;
+    height: 70px;
+}
+
+.header-holder .header-holder__menu{
+    flex: 0 0 50%;
+}
+
+.header-holder .header-holder__menu .menu-main-menu-container .menu{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.header-holder .header-holder__menu .menu-main-menu-container .menu li{
+    list-style: none;
+}
+
+.header-holder .header-holder__menu .menu-main-menu-container .menu li a{
+    font-family: "New Amsterdam", sans-serif;
+    font-size: 24px;
+    color: #e0dfdf;
+    text-decoration: none;
+    transition: color 300ms;
+}
+
+.header-holder .header-holder__menu .menu-main-menu-container .menu li a:hover{
+    color: #fff;
+}
+
