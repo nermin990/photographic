@@ -133,6 +133,7 @@ $image_right = get_field('image_right');
             ?>
         </div>
 
+
         <div class="other-photos-holder-arrows">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/divider.png" alt="Loading...">
         </div>
