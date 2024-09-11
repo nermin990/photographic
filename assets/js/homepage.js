@@ -64,6 +64,23 @@ $(document).ready(function () {
             '<path d="M40.4336 14.1943L0.433594 14.1943L40.4336 14.1943Z" fill="#161615"/>' +
             '<path d="M40.4336 14.1943L0.433592 14.1943" stroke="#323232FF" stroke-width="1.52838"/>' +
             "</svg>",
+        responsive: [
+            {
+                breakpoint: 991,
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 575,
+                settings: {
+                    slidesToShow: 1,
+                    arrows: false,
+                    autoplay: true,
+                    pauseOnHover: false
+                }
+            }
+        ]
     });
     $(".gallery-prev, .gallery-next").on("mousedown", function (e) {
         e.preventDefault(); // Sprečava defaultnu akciju (selektovanje teksta)
@@ -96,23 +113,23 @@ $(document).ready(function () {
 })
 
 // When we are logged in, on scroll turn off margin top, and bringing back margin when we scroll on top
-$(document).ready(function() {
-    var hasScrolled = false;
-
-    $(window).on('scroll', function() {
-        if ($(this).scrollTop() > 0) {
-            if (!hasScrolled) {
-                $('.header').css('margin-top', '0px');
-                $('.hero').css('margin-top', '85px');
-                hasScrolled = true;
-            }
-        } else {
-            if (hasScrolled) {
-                $('.header').css('margin-top', '40px');
-                $('.hero').css('margin-top', '125px');
-                hasScrolled = false;
-            }
-        }
-    });
-});
+// $(document).ready(function() {
+//     var hasScrolled = false;
+//
+//     $(window).on('scroll', function() {
+//         if ($(this).scrollTop() > 0) {
+//             if (!hasScrolled) {
+//                 $('.header').css('margin-top', '0px');
+//                 $('.hero').css('margin-top', '85px');
+//                 hasScrolled = true;
+//             }
+//         } else {
+//             if (hasScrolled) {
+//                 $('.header').css('margin-top', '40px');
+//                 $('.hero').css('margin-top', '125px');
+//                 hasScrolled = false;
+//             }
+//         }
+//     });
+// });
 

@@ -255,7 +255,13 @@
 .second-gallery .second-gallery-holder .second-gallery-holder__img.five-s img,
 .second-gallery .second-gallery-holder .second-gallery-holder__img.seven-s img,
 .second-gallery .second-gallery-holder .second-gallery-holder__img.nine-s img {
-    height: 99.6%;
+    height: 100%;
+}
+
+.first-gallery-holder__img,
+.second-gallery-holder__img
+{
+    display: flex;
 }
 
 .other-photos {
@@ -351,6 +357,37 @@
     }
 }
 
+@media only screen and (max-width: 1024px) {
+    .first-gallery .first-gallery-holder .first-gallery-holder__img img,
+    .second-gallery .second-gallery-holder .second-gallery-holder__img img {
+        height: 300px;
+    }
+
+}
+
+@media only screen and (max-width: 991px) {
+    .first-gallery, .second-gallery, .other-photos {
+        padding-bottom: 100px;
+    }
+
+    .first-gallery .first-gallery-holder .first-gallery-holder__img img,
+    .second-gallery .second-gallery-holder .second-gallery-holder__img img {
+        height: 260px;
+    }
+
+    .first-gallery .first-gallery-heading h2,
+    .second-gallery .second-gallery-heading h2,
+    .other-photos .other-photos-heading h2 {
+        font-size: 48px;
+    }
+
+    .other-photos .other-photos-holder-arrows {
+        width: 40%;
+        margin-left: 30%;
+        margin-top: 32px;
+    }
+}
+
 @media only screen and (max-width: 768px) {
     .about-us .about-us-section .about-us-section__left {
         width: 100%;
@@ -359,6 +396,20 @@
 
     .about-us .about-us-section .about-us-section__right {
         width: 100%;
+    }
+
+    .first-gallery, .second-gallery, .other-photos {
+        padding-bottom: 60px;
+    }
+
+
+    .first-gallery .first-gallery-holder .first-gallery-holder__img img,
+    .second-gallery .second-gallery-holder .second-gallery-holder__img img {
+        height: 220px;
+    }
+
+    .other-photos .other-photos-holder-img img {
+        height: 320px;
     }
 }
 
@@ -373,12 +424,36 @@
         padding-bottom: 60px;
     }
 
-    .about-us .about-us-section{
+    .about-us .about-us-section {
         margin-top: 60px;
     }
 
     .about-us .about-us-section .about-us-section__left h1 {
         font-size: 48px;
+    }
+
+    .first-gallery .first-gallery-heading h2,
+    .second-gallery .second-gallery-heading h2,
+    .other-photos .other-photos-heading h2 {
+        font-size: 36px;
+    }
+
+    .first-gallery .first-gallery-holder .first-gallery-holder__img img,
+    .second-gallery .second-gallery-holder .second-gallery-holder__img img {
+        height: 140px;
+    }
+
+    .first-gallery .first-gallery-holder,
+    .second-gallery .second-gallery-holder {
+        gap: 4px;
+    }
+
+    .second-gallery .second-gallery-holder .second-gallery-holder__img.two-s img, .second-gallery .second-gallery-holder .second-gallery-holder__img.five-s img, .second-gallery .second-gallery-holder .second-gallery-holder__img.seven-s img, .second-gallery .second-gallery-holder .second-gallery-holder__img.nine-s img {
+        height: 100%;
+    }
+
+    .other-photos .other-photos-holder-arrows {
+        display: none;
     }
 }
 
