@@ -52,6 +52,7 @@ $image_right = get_field('image_right');
     </div>
 </section>
 
+
 <section class="first-gallery" >
     <div class="container" >
         <div class="row">
@@ -134,6 +135,37 @@ $image_right = get_field('image_right');
 
         <div class="other-photos-holder-arrows">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/divider.png" alt="Loading...">
+        </div>
+    </div>
+</section>
+
+<section class="portfolios">
+    <div class="container">
+        <div class="row">
+            <div class="portfolios-holder">
+                <div class="portfolios-holder-heading">
+                    <h2>Portfolio Gallery</h2>
+                </div>
+                <?php
+                $portfolio_picker = get_field('portfolio_picker');
+                foreach ($portfolio_picker as $single_pick):
+                    $post = get_post($single_pick);
+                    $permalink = get_permalink($post);
+                    $feature_img = get_the_post_thumbnail($post, 'full', array('class' => 'portfolio-thumbnail'));
+                    $name = get_the_title($post);
+                    ?>
+                    <div class="portfolios-holder__single">
+                        <a href="<?= esc_url($permalink); ?>">
+                            <div class="portfolio-holder__single-img">
+                                <?= $feature_img; ?>
+                            </div>
+                            <h5><?= esc_html($name);?></h5>
+                        </a>
+                    </div>
+                <?php
+                endforeach;
+                ?>
+            </div>
         </div>
     </div>
 </section>

@@ -1,3 +1,97 @@
 .portfolio{
     padding: 100px 0;
 }
+
+.portfolio-holder{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: left;
+    gap: 2%;
+}
+
+.portfolio-holder h1{
+    flex: 0 0 100%;
+    text-align: center;
+    font-family: "Mulish", sans-serif;
+    margin-bottom: 48px;
+    font-size: 64px;
+    color: #333;
+}
+
+.portfolio-holder .portfolio-holder__single{
+    flex: 0 0 32%;
+    margin-bottom: 32px;
+}
+
+.portfolio-holder .portfolio-holder__single a{
+    text-decoration: none;
+}
+
+.portfolio-holder .portfolio-holder__single a .portfolio-holder__single-img{
+    display: flex;
+    flex-flow: row wrap;
+    overflow: hidden;
+}
+
+.portfolio-holder .portfolio-holder__single a img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: 300ms;
+}
+
+.portfolio-holder .portfolio-holder__single a img:hover{
+    opacity: 0.8;
+    scale: 1.2;
+}
+
+.portfolio-holder .portfolio-holder__single a h5{
+    font-family: "Parisienne", cursive;
+    font-weight: 500;
+    font-style: normal;
+    color: #000;
+    margin-top: 8px;
+    font-size: 24px;
+}
+
+.portfolio .pagination{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.portfolio .pagination .page-numbers{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    text-decoration: none;
+    color: #000;
+    transition: 300ms;
+}
+
+.portfolio .pagination .page-numbers.prev,
+.portfolio .pagination .page-numbers.next{
+    width: fit-content;
+    padding: 0 12px;
+}
+
+.portfolio .pagination .page-numbers:hover{
+    background: #f5dcbc;
+}
+
+
+.portfolio .pagination .page-numbers.current{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f5dcbc;
+}

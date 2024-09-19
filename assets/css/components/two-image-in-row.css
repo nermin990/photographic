@@ -1,11 +1,11 @@
 .two-in-row{
     display: flex;
-    gap: 2%;
-    margin: 2% 0;
+    gap: 1%;
+    margin: 1% 0;
 }
 
 .two-in-row img{
-    width: 49%;
+    width: 49.5%;
     height: auto;
     object-fit: cover;
 }

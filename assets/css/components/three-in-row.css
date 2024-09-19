@@ -1,11 +1,12 @@
 .three-in-row{
     display: flex;
-    gap: 2%;
-    margin: 2% 0;
+    justify-content: space-between;
+    gap: 1%;
+    margin: 1% 0;
 }
 
 .three-in-row img{
-    width: 32%;
+    width: 32.6%;
     height: auto;
     object-fit: cover;
 }

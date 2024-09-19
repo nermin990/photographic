@@ -1,0 +1,30 @@
+.left-two-right-one{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    gap: 1%;
+    margin: 1% 0;
+}
+
+.left-two-right-one .left-two__holder{
+    flex: 0 0 49.5%;
+    gap: 1%;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.left-two-right-one .left-two__holder img{
+    width: 100%;
+    height: 49.5%;
+    object-fit: cover;
+}
+
+.left-two-right-one .right-one__holder{
+    flex: 0 0 49.5%;
+}
+
+.left-two-right-one .right-one__holder img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

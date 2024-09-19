@@ -1,13 +1,13 @@
 <?php
 
-function portfolio_cpt_nermin()
-{
+function portfolio_cpt_nermin() {
     $labels = array(
         'name' => _x('Portfolio', 'Post type general name', 'recipe'),
         'singular_name' => _x('Portfolio', 'Post type singular name', 'recipe'),
         'menu_name' => _x('Portfolio', 'Admin Menu text', 'recipe'),
         'name_admin_bar' => _x('Portfolio', 'Add New on Toolbar', 'recipe'),
     );
+
     $args = array(
         'labels' => $labels,
         'description' => 'Portfolio custom post type.',
@@ -27,9 +27,10 @@ function portfolio_cpt_nermin()
         'taxonomies' => array('category'),
     );
 
-    register_post_type('Portfolio', $args);
+    register_post_type('portfolio', $args);
 }
 
 add_action('init', 'portfolio_cpt_nermin');
+
 
 ?>

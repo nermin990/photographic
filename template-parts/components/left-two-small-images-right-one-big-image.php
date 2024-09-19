@@ -19,11 +19,15 @@ if ($first_left_image || $second_left_image || $right_image_big):
     $right_image_big_width = $right_image_big['width'];
     $right_image_big_height = $right_image_big['height'];
     ?>
-    <div class="left-one-right-two">
-        <img src="<?= $first_left_image_url; ?>" alt="<?= $first_left_image_alt; ?>" width="<?= $first_left_image_width; ?>" height="<?= $first_left_image_height; ?>">
-        <img src="<?= $second_left_image_url; ?>" alt="<?= $second_left_image_alt; ?>" width="<?= $second_left_image_width; ?>" height="<?= $second_left_image_height; ?>">
-        <img src="<?= $right_image_big_url; ?>" alt="<?= $right_image_big_alt; ?>" width="<?= $right_image_big_width; ?>" height="<?= $right_image_big_height; ?>">
+    <div class="left-two-right-one">
+        <div class="left-two__holder">
+            <img src="<?= $first_left_image_url; ?>" alt="<?= $first_left_image_alt; ?>" width="<?= $first_left_image_width; ?>" height="<?= $first_left_image_height; ?>">
+            <img src="<?= $second_left_image_url; ?>" alt="<?= $second_left_image_alt; ?>" width="<?= $second_left_image_width; ?>" height="<?= $second_left_image_height; ?>">
 
+        </div>
+        <div class="right-one__holder">
+            <img src="<?= $right_image_big_url; ?>" alt="<?= $right_image_big_alt; ?>" width="<?= $right_image_big_width; ?>" height="<?= $right_image_big_height; ?>">
+        </div>
     </div>
 <?php
 endif;
