@@ -11,7 +11,7 @@ $three_images = get_sub_field('three_images');
             $image_full_height = $single_img['height'];
             ?>
             <img src="<?= esc_url($image_full_url); ?>" alt="<?= esc_attr($image_full_alt); ?>"
-                 width="<?= esc_attr($image_full_width); ?>" height="<?= esc_attr($image_full_height); ?>">
+                 width="<?= esc_attr($image_full_width); ?>" height="<?= esc_attr($image_full_height); ?>" loading="lazy">
         <?php
         endif;
     endforeach;

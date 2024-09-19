@@ -14,8 +14,8 @@ if ($image_left || $image_right):
     $image_right_height = $image_right['height'];
     ?>
     <div class="two-in-row">
-        <img src="<?= $image_left_url; ?>" alt="<?= $image_left_alt; ?>" width="<?= $image_left_width; ?>" height="<?= $image_left_height; ?>">
-        <img src="<?= $image_right_url; ?>" alt="<?= $image_right_alt; ?>" width="<?= $image_right_width; ?>" height="<?= $image_right_height; ?>">
+        <img src="<?= $image_left_url; ?>" alt="<?= $image_left_alt; ?>" width="<?= $image_left_width; ?>" height="<?= $image_left_height; ?>" loading="lazy">
+        <img src="<?= $image_right_url; ?>" alt="<?= $image_right_alt; ?>" width="<?= $image_right_width; ?>" height="<?= $image_right_height; ?>" loading="lazy">
 
     </div>
 <?php

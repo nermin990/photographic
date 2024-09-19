@@ -45,7 +45,7 @@ $image_right = get_field('image_right');
                     </div>
                 </div>
                 <div class="about-us-section__right col-md-6">
-                    <img src="<?= $image_right['url']; ?>" alt="">
+                    <img src="<?= $image_right['url']; ?>" alt="<?= $image_right['alt']; ?>" width="<?= $image_right['width']; ?>" height="<?= $image_right['height']; ?>" loading="lazy">
                 </div>
             </div>
         </div>
@@ -72,7 +72,7 @@ $image_right = get_field('image_right');
                     <div class="first-gallery-holder__img">
                         <img src="<?= $single_img_url; ?>" alt="<?= $single_img_alt; ?>"
                              width="<?= $single_img_width; ?>"
-                             height="<?= $single_img_height; ?>">
+                             height="<?= $single_img_height; ?>" loading="lazy">
                     </div>
                 <?php
                 endforeach;
@@ -102,7 +102,7 @@ $image_right = get_field('image_right');
                     <div class="second-gallery-holder__img">
                         <img src="<?= $single_img_url; ?>" alt="<?= $single_img_alt; ?>"
                              width="<?= $single_img_width; ?>"
-                             height="<?= $single_img_height; ?>">
+                             height="<?= $single_img_height; ?>" loading="lazy">
                     </div>
                 <?php
                 endforeach;
@@ -124,7 +124,7 @@ $image_right = get_field('image_right');
             foreach ($other_photos as $photo):
                 ?>
                 <div class="other-photos-holder-img">
-                    <img src="<?php echo $photo['url']; ?>" alt="<?php echo $photo['alt']; ?>" loading="lazy">
+                    <img src="<?php echo $photo['url']; ?>" alt="<?php echo $photo['alt']; ?>" width="<?php echo $photo['width']; ?>" height="<?php echo $photo['height']; ?>" loading="lazy">
                 </div>
 
             <?php
@@ -134,7 +134,7 @@ $image_right = get_field('image_right');
 
 
         <div class="other-photos-holder-arrows">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/divider.png" alt="Loading...">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/divider.png" alt="Loading..." width="360" height="180">
         </div>
     </div>
 </section>

@@ -21,12 +21,12 @@ if ($first_left_image || $second_left_image || $right_image_big):
     ?>
     <div class="left-two-right-one">
         <div class="left-two__holder">
-            <img src="<?= $first_left_image_url; ?>" alt="<?= $first_left_image_alt; ?>" width="<?= $first_left_image_width; ?>" height="<?= $first_left_image_height; ?>">
-            <img src="<?= $second_left_image_url; ?>" alt="<?= $second_left_image_alt; ?>" width="<?= $second_left_image_width; ?>" height="<?= $second_left_image_height; ?>">
+            <img src="<?= $first_left_image_url; ?>" alt="<?= $first_left_image_alt; ?>" width="<?= $first_left_image_width; ?>" height="<?= $first_left_image_height; ?>" loading="lazy">
+            <img src="<?= $second_left_image_url; ?>" alt="<?= $second_left_image_alt; ?>" width="<?= $second_left_image_width; ?>" height="<?= $second_left_image_height; ?>" loading="lazy">
 
         </div>
         <div class="right-one__holder">
-            <img src="<?= $right_image_big_url; ?>" alt="<?= $right_image_big_alt; ?>" width="<?= $right_image_big_width; ?>" height="<?= $right_image_big_height; ?>">
+            <img src="<?= $right_image_big_url; ?>" alt="<?= $right_image_big_alt; ?>" width="<?= $right_image_big_width; ?>" height="<?= $right_image_big_height; ?>" loading="lazy">
         </div>
     </div>
 <?php
