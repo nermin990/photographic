@@ -1,8 +1,8 @@
-.portfolio{
+.portfolio {
     padding: 100px 0;
 }
 
-.portfolio-holder{
+.portfolio-holder {
     display: flex;
     flex-flow: row wrap;
     align-items: flex-start;
@@ -10,7 +10,7 @@
     gap: 2%;
 }
 
-.portfolio-holder h1{
+.portfolio-holder h1 {
     flex: 0 0 100%;
     text-align: center;
     font-family: "Mulish", sans-serif;
@@ -19,34 +19,34 @@
     color: #333;
 }
 
-.portfolio-holder .portfolio-holder__single{
+.portfolio-holder .portfolio-holder__single {
     flex: 0 0 32%;
     margin-bottom: 32px;
 }
 
-.portfolio-holder .portfolio-holder__single a{
+.portfolio-holder .portfolio-holder__single a {
     text-decoration: none;
 }
 
-.portfolio-holder .portfolio-holder__single a .portfolio-holder__single-img{
+.portfolio-holder .portfolio-holder__single a .portfolio-holder__single-img {
     display: flex;
     flex-flow: row wrap;
     overflow: hidden;
 }
 
-.portfolio-holder .portfolio-holder__single a img{
+.portfolio-holder .portfolio-holder__single a img {
     width: 100%;
     height: auto;
     object-fit: cover;
     transition: 300ms;
 }
 
-.portfolio-holder .portfolio-holder__single a img:hover{
+.portfolio-holder .portfolio-holder__single a img:hover {
     opacity: 0.8;
     scale: 1.2;
 }
 
-.portfolio-holder .portfolio-holder__single a h5{
+.portfolio-holder .portfolio-holder__single a h5 {
     font-family: "Parisienne", cursive;
     font-weight: 500;
     font-style: normal;
@@ -55,7 +55,7 @@
     font-size: 24px;
 }
 
-.portfolio .pagination{
+.portfolio .pagination {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
@@ -64,7 +64,7 @@
     gap: 12px;
 }
 
-.portfolio .pagination .page-numbers{
+.portfolio .pagination .page-numbers {
     width: 30px;
     height: 30px;
     display: flex;
@@ -77,21 +77,52 @@
 }
 
 .portfolio .pagination .page-numbers.prev,
-.portfolio .pagination .page-numbers.next{
+.portfolio .pagination .page-numbers.next {
     width: fit-content;
     padding: 0 12px;
 }
 
-.portfolio .pagination .page-numbers:hover{
+.portfolio .pagination .page-numbers:hover {
     background: #f5dcbc;
 }
 
 
-.portfolio .pagination .page-numbers.current{
+.portfolio .pagination .page-numbers.current {
     width: 30px;
     height: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
     background: #f5dcbc;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .portfolio-holder h1 {
+        margin-bottom: 32px;
+        font-size: 54px;
+    }
+
+    .portfolio-holder .portfolio-holder__single {
+        flex: 0 0 49%;
+    }
+}
+
+
+@media only screen and (max-width: 575px) {
+    .logged-in .portfolio{
+        padding: 150px 0;
+    }
+
+    .portfolio{
+        padding: 110px 0;
+    }
+
+    .portfolio-holder h1 {
+        font-size: 48px;
+    }
+
+    .portfolio-holder .portfolio-holder__single {
+        flex: 0 0 100%;
+    }
 }

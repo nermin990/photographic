@@ -20,6 +20,10 @@
     margin-bottom: 32px;
 }
 
+.portfolio .portfolio-content strong{
+    font-family: "Parisienne", cursive;
+}
+
 .portfolio .portfolio-content h4{
     font-family: "Parisienne", cursive;
     font-weight: 600;
@@ -29,3 +33,32 @@
     margin-bottom: 12px;
 }
 
+@media only screen and (max-width: 991px){
+    .portfolio .portfolio-content{
+        margin-left: 0;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 575px){
+    .logged-in .portfolio{
+        padding: 150px 0 100px;
+    }
+
+    .portfolio{
+        padding: 110px 0 100px;
+    }
+
+    .portfolio .portfolio-title h1{
+        font-size: 48px;
+    }
+
+    .portfolio .portfolio-content{
+        font-family: "Parisienne", cursive;
+        font-weight: 500;
+        font-style: normal;
+        font-size: 14px;
+        text-align: center;
+        margin-bottom: 32px;
+    }
+}

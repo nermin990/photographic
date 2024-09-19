@@ -11,7 +11,7 @@ get_header();
                 <h1>Portfolio</h1>
 
                 <?php
-                $posts_per_page = 9;
+                $posts_per_page = 12;
 
                 $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 
