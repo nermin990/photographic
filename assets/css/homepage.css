@@ -103,6 +103,7 @@
 .about-us .about-us-section .about-us-section__right img {
     display: flex;
     width: 100%;
+    height: auto;
 }
 
 .first-gallery {
@@ -259,8 +260,7 @@
 }
 
 .first-gallery-holder__img,
-.second-gallery-holder__img
-{
+.second-gallery-holder__img {
     display: flex;
 }
 
@@ -308,6 +308,7 @@
 
 .other-photos .other-photos-holder-arrows img {
     width: 40%;
+    height: auto;
     order: 2;
 }
 
@@ -342,14 +343,14 @@
     stroke: #fff;
 }
 
-.portfolios{
+.portfolios {
     position: relative;
     z-index: 9;
     background-color: #fff;
     padding-bottom: 160px;
 }
 
-.portfolios-holder{
+.portfolios-holder {
     display: flex;
     flex-flow: row wrap;
     align-items: flex-start;
@@ -357,11 +358,11 @@
     gap: 1.3%;
 }
 
-.portfolios-holder .portfolios-holder-heading{
+.portfolios-holder .portfolios-holder-heading {
     flex: 0 0 100%;
 }
 
-.portfolios-holder .portfolios-holder-heading h2{
+.portfolios-holder .portfolios-holder-heading h2 {
     font-family: "Parisienne", cursive;
     font-weight: 500;
     font-style: normal;
@@ -370,33 +371,33 @@
     margin-bottom: 32px;
 }
 
-.portfolios-holder__single{
+.portfolios-holder__single {
     flex: 0 0 24%;
 }
 
-.portfolios-holder__single a{
+.portfolios-holder__single a {
     text-decoration: none;
 }
 
-.portfolios-holder__single a .portfolio-holder__single-img{
+.portfolios-holder__single a .portfolio-holder__single-img {
     display: flex;
     flex-flow: row wrap;
     overflow: hidden;
 }
 
-.portfolios-holder__single a .portfolio-holder__single-img img{
+.portfolios-holder__single a .portfolio-holder__single-img img {
     width: 100%;
     height: auto;
     object-fit: cover;
     transition: 300ms;
 }
 
-.portfolios-holder__single a .portfolio-holder__single-img img:hover{
+.portfolios-holder__single a .portfolio-holder__single-img img:hover {
     opacity: 0.8;
     scale: 1.2;
 }
 
-.portfolios-holder__single a h5{
+.portfolios-holder__single a h5 {
     font-family: "Parisienne", cursive;
     font-weight: 500;
     font-style: normal;
@@ -429,6 +430,10 @@
 }
 
 @media only screen and (max-width: 991px) {
+    .about-us .about-us-section .about-us-section__left h1 {
+        font-size: 52px;
+    }
+
     .first-gallery, .second-gallery, .other-photos {
         padding-bottom: 100px;
     }
@@ -441,7 +446,7 @@
     .first-gallery .first-gallery-heading h2,
     .second-gallery .second-gallery-heading h2,
     .other-photos .other-photos-heading h2,
-    .portfolios-holder .portfolios-holder-heading h2{
+    .portfolios-holder .portfolios-holder-heading h2 {
         font-size: 48px;
     }
 
@@ -451,19 +456,19 @@
         margin-top: 32px;
     }
 
-    .portfolios{
+    .portfolios {
         padding-bottom: 100px;
     }
 
-    .portfolios-holder{
+    .portfolios-holder {
         gap: 2%;
     }
 
-    .portfolios-holder__single{
+    .portfolios-holder__single {
         flex: 0 0 49%;
     }
 
-    .portfolios-holder__single:nth-child(-n + 3){
+    .portfolios-holder__single:nth-child(-n + 3) {
         margin-bottom: 24px;
     }
 }
@@ -515,7 +520,7 @@
     .first-gallery .first-gallery-heading h2,
     .second-gallery .second-gallery-heading h2,
     .other-photos .other-photos-heading h2,
-    .portfolios-holder .portfolios-holder-heading h2{
+    .portfolios-holder .portfolios-holder-heading h2 {
         font-size: 36px;
     }
 
@@ -533,20 +538,27 @@
         height: 100%;
     }
 
+
+
     .other-photos .other-photos-holder-arrows {
         display: none;
     }
 
-    .portfolios-holder__single{
+    .portfolios-holder__single {
         flex: 0 0 100%;
     }
 
-    .portfolios-holder__single{
+    .portfolios-holder__single {
         margin-bottom: 24px;
     }
 
-    .portfolios-holder__single:last-of-type{
+    .portfolios-holder__single:last-of-type {
         margin-bottom: 0;
     }
 }
 
+@media only screen and (max-width: 426px){
+    .other-photos .other-photos-holder-img img{
+        height: 200px;
+    }
+}

@@ -93,24 +93,6 @@ $(document).ready(function () {
     $('.gallery-next').appendTo('.other-photos-holder-arrows');
 })
 
-// Hamburger menu
-$(document).ready(function () {
-    $('.hamburger-menu-icon .hamburger-open').on('click', function () {
-        $(this).css('display', 'none');
-        $('.hamburger-menu').slideDown();
-        $('.hamburger-close').fadeIn();
-    })
-    $('.hamburger-menu-icon .hamburger-close').on('click', function () {
-        $(this).css('display', 'none');
-        $('.hamburger-menu').slideUp();
-        $('.hamburger-open').fadeIn();
-    })
-    $('.hamburger-menu .header-holder__menu-hamburger .menu-main-menu-container .menu li a').on('click', function () {
-        $('.hamburger-menu').slideUp();
-        $('.hamburger-close').css('display', 'none');
-        $('.hamburger-open').fadeIn();
-    });
-})
 
 // When we are logged in, on scroll turn off margin top, and bringing back margin when we scroll on top
 // $(document).ready(function() {
